@@ -292,18 +292,18 @@ public class ClubMembersActivity extends Activity {
 				
 				
 				//判断个人的等级
-				switch (item.getLevel()) {
-				case "1":
+				switch (Integer.parseInt(item.getLevel())) {
+				case 1:
 					//之后需要更改
 					holder.setImageResource(R.id.club_members_userlevel, R.drawable.level_1);
 					break;
-				case "2":
+				case 2:
 					holder.setImageResource(R.id.club_members_userlevel, R.drawable.level_2);
 					break;
-				case "3":
+				case 3:
 					holder.setImageResource(R.id.club_members_userlevel, R.drawable.level_3);
 					break;
-				case "4":
+				case 4:
 					holder.setImageResource(R.id.club_members_userlevel, R.drawable.level_4);
 					break;
 				
