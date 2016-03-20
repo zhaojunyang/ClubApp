@@ -123,39 +123,39 @@
         <!-- 申请加入俱乐部时候填的信息 -->
         <activity
             android:name="com.geminno.club.activity.AddClubInfoActivity"
-            android:label="czy"
+            android:label="AddClubInfoActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <!-- 帖子回复页面 -->
         <activity
             android:name="com.geminno.club.activity.InvitationReplyActivity"
-            android:label="czy"
+            android:label="InvitationReplyActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         
         <!-- 我加入的俱乐部 -->
         <activity
             android:name="com.geminno.club.activity.MyAddedClubActivity"
-            android:label="czy"
+            android:label="MyAddedClubActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar" >
           
         </activity>
         <!-- 发布帖子 -->
         <activity
             android:name="com.geminno.club.activity.Release_InvitationActivity"
-            android:label="czy"
+            android:label="Release_InvitationActivity"
              >
         </activity>
         <!-- 俱乐部详情 -->
         <activity
             android:name="com.geminno.club.activity.ClubDetailsActivity"
-            android:label="czy"
+            android:label="ClubDetailsActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
         <!-- 成员列表 -->
         <activity
             android:name="com.geminno.club.activity.ClubMembersActivity"
-            android:label="czy"
+            android:label="ClubMembersActivity"
             android:theme="@android:style/Theme.Holo.NoActionBar" >
         </activity>
     </application>
