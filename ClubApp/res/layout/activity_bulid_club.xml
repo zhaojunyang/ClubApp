@@ -1,0 +1,221 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+<!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/buildclub_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/buildclub_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/buildclub_back"
+            android:paddingLeft="10dp"
+            android:text="创建俱乐部"
+            android:textColor="#343434"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/buildclub_back"
+            android:src="@drawable/club_group_sepline" />
+    </RelativeLayout>
+<!-- 俱乐部LOGO -->
+    <com.geminno.club.view.RoundImageView
+        android:id="@+id/buildclub_LOGO"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/relativeLayout1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/add_photos_icon" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buildclub_LOGO"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/club_group_sepline" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="20dp"
+        android:textColor="#010101"
+        android:textSize="18dp"
+        android:text="名称" />
+	<!-- 输入名称 -->
+    <EditText
+        android:id="@+id/buildclub_et_clubname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/textView2"
+        android:background="#ffffff"
+        android:textColor="#010101"
+        android:hint="请输入俱乐部名称"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView2"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/club_group_sepline" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/imageView4"
+        android:layout_marginTop="20dp"
+       	android:textColor="#010101"
+        android:textSize="18dp"
+        android:text="区位" />
+	<!-- 区位的定位 -->
+	
+    <TextView
+        android:id="@+id/buildclub_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buildclub_et_clubname"
+        android:layout_alignBottom="@+id/textView3"
+        android:textColor="#BFBFBF" 
+        android:textSize="18dp"/>
+<!-- 定位按钮 -->
+    <ImageView
+        android:id="@+id/buildclub_iv_loca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:src="@drawable/club_ditail_location" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/club_group_sepline" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView3"
+        android:layout_below="@+id/imageView6"
+        android:layout_marginTop="20dp"
+        android:textColor="#010101"
+        android:textSize="18dp"
+        android:text="类型" />
+<!-- Spinner实现选择俱乐部类型
+    <Spinner
+        android:id="@+id/buildclub_spinner_type"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/buildclub_location"
+        android:layout_alignTop="@+id/textView5"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+         /> -->
+	
+    <RelativeLayout
+        android:id="@+id/buildclub_spinner_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/buildclub_location"
+        android:layout_alignBottom="@+id/textView5"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_alignTop="@+id/textView5" >
+
+        <TextView
+            android:id="@+id/buildclub_spinner_type_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:textColor="#BFBFBF" 
+       		 android:textSize="18dp"
+            android:text="请选择..." />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="30dp" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/club_down_dot" />
+
+    </RelativeLayout>
+	
+	
+	
+	
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:src="@drawable/club_group_sepline" />
+
+    <Button
+        android:id="@+id/buildclub_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        android:text="创建"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="@drawable/club_sign" />
+
+    
+</RelativeLayout>

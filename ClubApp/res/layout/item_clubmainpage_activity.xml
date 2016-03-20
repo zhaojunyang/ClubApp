@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/clubmainpage_act_bg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner3" >
+    </ImageView>
+	  <TextView
+            android:id="@+id/clubmainpage_tv_actname"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/clubmainpage_act_bg"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="5dp"
+            android:text="程智渊的活动，大家来参加啊！！！！！"
+            android:textColor="#ABABAB"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/clubmainpage_iv_activ"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:layout_below="@+id/clubmainpage_tv_actname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:src="@drawable/club_topic_activity_time" />
+
+        <TextView
+            android:id="@+id/clubmainpage_tv_acttime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/clubmainpage_iv_activ"
+            android:layout_toRightOf="@+id/clubmainpage_iv_activ"
+            android:paddingLeft="5dp"
+            android:text="2016-02-03"
+            android:textColor="#C0BEB1"
+            android:textSize="10dp" />
+</RelativeLayout>

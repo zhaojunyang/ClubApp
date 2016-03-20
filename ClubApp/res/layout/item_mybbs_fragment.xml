@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	>
+
+     <RelativeLayout
+        android:id="@+id/item_bbs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lable" >
+
+        <ImageView
+            android:id="@+id/iv_bbs_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/club_icon_climbarticle" />
+
+        <TextView
+            android:id="@+id/tv_bbs_sendtime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_bbs_header"
+            android:layout_below="@+id/iv_bbs_header"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:text="2016/03/15/08:55:06" />
+
+        <TextView
+            android:id="@+id/tv_bbs_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_bbs_header"
+            android:text="南方小乡村" 
+            android:textSize="20sp"/>
+
+        <TextView
+            android:id="@+id/tv_bbs_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/tv_bbs_sendtime"
+            android:layout_alignBottom="@+id/tv_bbs_sendtime"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:text="户外摄影" />
+
+        <View
+            android:id="@+id/View01"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/btn_gray_normal" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/item_bbs"
+        android:background="@color/btn_gray_normal" />
+
+</RelativeLayout>

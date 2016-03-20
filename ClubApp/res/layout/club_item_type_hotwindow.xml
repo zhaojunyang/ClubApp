@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+	android:background="@drawable/club_choiceness_shape_type"    
+     >
+     <RelativeLayout 
+         android:layout_width="match_parent"
+         android:layout_height="120dp"
+         
+         >
+        <Button
+            android:id="@+id/club_popularwindow_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:textSize="16dp"
+            android:layout_marginTop="5dp"
+            android:text="从高到低" />
+      
+        <Button
+            android:id="@+id/club_popularwindow_type_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/club_popularwindow_type"
+            android:textSize="16dp"
+            android:text="从低到高" />
+     
+       </RelativeLayout>
+     
+</LinearLayout> 

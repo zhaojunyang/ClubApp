@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register_background" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/im_return_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/blue_break" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal" >
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/liner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@drawable/register_writeframe"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="40dp"
+       >
+
+        <EditText
+            android:id="@+id/et_phonenum"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/phonenum_psw_input_background"
+            android:ems="10"
+            android:hint="@string/phonenum"
+            android:textColor="@color/registerpage_text_colors"
+            android:textSize="16sp" >
+
+            <requestFocus />
+        </EditText>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_phonenum"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical" >
+
+            <EditText
+                android:id="@+id/et_verication_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/phonenum_psw_input_background"
+                android:ems="10"
+                android:hint="@string/verification_code"
+                android:textColor="@color/registerpage_text_colors"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/get_verication"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/getcode_press_up"
+                android:text="@string/get_verification_code"
+                android:textColor="@color/registerpage_text_getvericationcode_colors"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <EditText
+            android:id="@+id/et_psw"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/relative2"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/phonenum_psw_input_background"
+            android:ems="10"
+            android:hint="@string/psw"
+            android:textColor="@color/registerpage_text_colors"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/et_psw"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/login_press_up"
+            android:text="@string/register"
+            android:textColor="@color/registerpage_text_register"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+</RelativeLayout>

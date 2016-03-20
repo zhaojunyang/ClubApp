@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/find_page_fragment_bg" >
+
+    <RelativeLayout
+        android:id="@+id/layout_other_peoplecenter_topbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/bg_user_home_top"
+        android:padding="30dp" >
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" >
+
+            <TextView
+                android:id="@+id/tv_otherpeople_nickname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_fanssign"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                android:text="昵称"
+                android:textColor="#ffffff"
+                android:textSize="24sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_otherpeople_nickname"
+                android:layout_centerHorizontal="true"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_otherpeople_head"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/icon_fans" />
+
+                <TextView
+                    android:id="@+id/tv_fanscount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout="@+id/iv_otherpeople_head"
+                    android:text="100"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_fanssign"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/icon_ls" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_focused"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/other_peoplecenter_focused_press_up" />
+
+        <ImageView
+            android:id="@+id/iv_otherpeople_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:src="@drawable/ls_club_back_icon_bg" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/layout_other_peoplecenter_topbg"
+        android:background="#ffffff" >
+
+        <EditText
+            android:id="@+id/et_otherpeople_simplesign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:background="@color/find_page_fragment_bg"
+            android:hint="哎呦，简介没写哦······" >
+        </EditText>
+
+        <LinearLayout
+            android:id="@+id/linear_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/et_otherpeople_simplesign"
+            android:orientation="horizontal" >
+
+            <Button
+                android:id="@+id/btn_otherpeople_left"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="发布的帖子"
+                android:drawableBottom="@drawable/other_peoplecenter_post_press_up"
+                android:textColor="#49A34B" />
+
+            <Button
+                android:id="@+id/btn_otherpeople_right"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#ffffff"
+                android:text="加入的俱乐部"
+                android:textColor="#49A34B" 
+                android:drawableBottom="@drawable/other_peoplecenter_post_press_up"/>
+                
+        </LinearLayout>
+ 
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/lv_otherpeople_userinfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:dividerHeight="5dp"
+        android:layout_below="@+id/relativeLayout2" >
+
+    </ListView>
+   
+</RelativeLayout>

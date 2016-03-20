@@ -1,0 +1,284 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+<!-- 返回按钮 -->
+        <ImageView
+            android:id="@+id/club_details_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:src="@drawable/buildclub_back" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="俱乐部介绍"
+            android:textColor="#5C5C5A"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:id="@+id/club_details_goto_memberslist"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/club_list_item_default" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:background="#49A34A" />
+<!-- 俱乐部LOGO -->
+    <com.geminno.club.view.RoundImageView
+        android:id="@+id/club_details_clublogo"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/ba_club_search_bg" />
+<!-- 俱乐部名字 -->
+    <TextView
+        android:id="@+id/club_details_club_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/club_details_clublogo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:textSize="20dp"
+        android:textColor="#817F7D"
+        android:text="极限攀登" />
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/club_details_club_name"
+        android:layout_marginTop="20dp"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+             >
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:textColor="#71B772"
+                android:textSize="18dp"
+                android:text="所在地区" />
+<!-- 俱乐部的所在地区 -->
+            <TextView
+                android:id="@+id/club_details_clublocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView4"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:textSize="18dp"
+                android:textColor="#807D7B"
+                android:text="北京 北京" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/club_group_sepline" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView2"
+               	android:layout_alignLeft="@+id/textView4"
+                android:layout_marginTop="20dp"
+                android:textColor="#71B772"
+                android:textSize="18dp"
+                android:text="类型" />
+<!-- 俱乐部的类型 -->
+            <TextView
+                android:id="@+id/club_details_club_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/club_details_clublocation"
+                android:layout_alignTop="@+id/textView6"
+                android:textSize="18dp"
+                android:textColor="#807D7B"
+                android:text="横着爬！竖着爬！" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView6"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/club_group_sepline" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imageView3"
+                android:layout_marginTop="20dp"
+                android:layout_alignLeft="@+id/textView6"
+                android:textColor="#71B772"
+                android:textSize="18dp"
+                android:text="创立时间" />
+<!-- 俱乐部的创建时间 -->
+            <TextView
+                android:id="@+id/club_details_club_make_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/club_details_club_type"
+                android:layout_alignTop="@+id/textView8"
+                android:textSize="18dp"
+                android:textColor="#807D7B"
+                android:text="2015-07-07" />
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:layout_alignParentLeft="true"
+                android:layout_below="@+id/textView8"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/club_group_sepline" />
+
+            <TextView
+                android:id="@+id/textView10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+				android:layout_below="@+id/imageView4"
+				android:layout_alignLeft="@+id/textView8"
+				android:layout_marginTop="20dp"
+				android:textColor="#71B772"
+                android:textSize="18dp"
+                android:text="创建人" />
+<!-- 创建人头像 -->
+            <com.geminno.club.view.RoundImageView
+                android:id="@+id/club_details_clubbuilder_logo"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/club_details_club_make_time"
+                android:layout_alignBottom="@+id/textView10"
+                android:src="@drawable/ba_club_search_bg" />
+<!-- 创建人名字 -->
+            <TextView
+                android:id="@+id/club_details_clubbuilder_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView10"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/club_details_clubbuilder_logo"
+                android:textSize="18dp"
+                android:textColor="#807D7B"
+                android:text="砾石小助手" />
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView10"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/club_group_sepline" />
+           
+            <TextView 
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_below="@+id/imageView5"
+                android:layout_marginTop="20dp"
+                android:textColor="#71B772"
+                android:textSize="18dp"
+                android:text="领队"
+                />
+<!-- 领队的头像 -->
+            <com.geminno.club.view.RoundImageView
+                android:id="@+id/club_details_club_leader"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/club_details_club_make_time"
+                android:layout_alignBottom="@+id/textView12"
+                android:src="@drawable/ba_club_search_bg" />
+<!-- 领队名称 -->
+            <TextView
+                android:id="@+id/club_details_club_leadername"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/textView12"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/club_details_club_leader"
+                android:textSize="18dp"
+                android:textColor="#807D7B"
+                android:text="帅气渊" />
+
+            <ImageView
+                android:id="@+id/imageView6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView12"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/club_group_sepline" />
+           
+           <TextView 
+                android:id="@+id/textView14"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignLeft="@+id/textView10"
+                android:layout_below="@+id/imageView6"
+                android:layout_marginTop="20dp"
+                android:textColor="#71B772"
+                android:textSize="18dp"
+                android:text="简介"
+                />
+          <!-- 多行文本 -->
+ <!-- 俱乐部的简介 -->
+           <TextView 
+               android:id="@+id/club_details_club_brief"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_alignLeft="@+id/club_details_club_make_time"
+               android:layout_alignTop="@+id/textView14"
+               android:textSize="18dp"
+               android:layout_marginRight="20dp"
+               android:textColor="#807D7B"
+               android:singleLine="false"
+               android:text="敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码敲代码"
+               />
+           
+            
+        </RelativeLayout>
+        
+        
+    </ScrollView>
+
+</RelativeLayout>

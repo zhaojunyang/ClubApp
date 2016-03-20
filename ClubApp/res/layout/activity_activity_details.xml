@@ -1,0 +1,209 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.geminno.club.activity.ActivityDetailsActivity" >
+
+    <!-- 顶部标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/tl_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+             android:onClick="goBack"
+            android:layout_centerVertical="true"
+            android:src="@drawable/go_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#62D9D1"
+            android:text="@string/samecity_activity_title"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    <ImageView 
+        android:id="@+id/iv_activityPhoto"
+        android:layout_width="match_parent"
+        android:layout_below="@id/tl_title"
+        android:scaleType="fitXY"
+        android:layout_height="200dp"
+        android:src="@drawable/activity_photo"/>
+	<!-- 活动注意事项 -->
+    <LinearLayout
+        android:id="@+id/ll_activityAttention"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/iv_activityPhoto"
+        android:background="#f8f8f8"
+        android:weightSum="5"
+        android:orientation="vertical" >
+		
+        <!-- 活动集合时间 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:gravity="center_vertical"
+		    android:layout_weight="1">
+		     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:textSize="20sp"
+            android:text="集合时间：" />
+		     <TextView
+            android:id="@+id/tv_activityDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2016-5-6" />
+		</LinearLayout>
+        <!-- 集合地点 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		     android:gravity="center_vertical"
+		    android:layout_weight="1">
+		     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:textSize="20sp"
+            android:text="集合地点：" />
+		     <TextView
+            android:id="@+id/tv_activityLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:textSize="20sp"
+            android:text="江苏盐城火车站" />
+		</LinearLayout>
+        <!-- 活动领队 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		     android:gravity="center_vertical"
+		    android:layout_weight="1">
+		     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="活动领队：" />
+		     <TextView
+            android:id="@+id/tv_activityHeaderName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="2016-5-6" />
+		</LinearLayout>
+        <!-- 联系方式 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		     android:gravity="center_vertical"
+		    android:layout_weight="1">
+		     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:textSize="20sp"
+            android:text="联系方式：" />
+		     <TextView
+            android:id="@+id/tv_activityPhoneNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:textSize="20sp"
+            android:text="155559150099" />
+		</LinearLayout>
+        <!-- 活动人数 -->
+		<LinearLayout 
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		     android:gravity="center_vertical"
+		    android:layout_weight="1">
+		     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:textSize="20sp"
+            android:text="活动人数：" />
+		     <TextView
+            android:id="@+id/tv_activityMemberNumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+               android:textSize="20sp"
+            android:text="30" />
+		</LinearLayout>
+    </LinearLayout>
+	<LinearLayout
+	    android:id="@+id/ll_activityDetails"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	   android:layout_below="@id/ll_activityAttention"
+	   android:layout_marginTop="10dp"
+	   android:orientation="vertical">
+	   <TextView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+         android:background="#f8f8f8"
+         android:gravity="center_vertical"
+         android:textSize="20sp"
+        android:text="活动介绍："/>
+	   <TextView 
+        android:id="@+id/tv_activityDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/textview_border"
+        android:layout_marginTop="30dp"
+        android:textSize="20sp"
+        android:minHeight="300dp"
+        android:text="通过给view设置LayoutParams，在addView的时候，将layoutParams也作为入参就可以了；
+ 2、可以再view后面或者下面添加一个占有一定宽度但背景透明的BlankView，这样view之间就通过BlankView隔开了。"/>
+	   
+	</LinearLayout>
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_alignParentBottom="true"
+          android:background="@drawable/textview_border"
+        android:gravity="center_vertical">
+        <ImageView 
+            android:id="@+id/iv_likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="30dp"
+            android:src="@drawable/like_selector"/>
+        <TextView 
+            android:id="@+id/tv_likeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/iv_likeButton"
+            android:text="42点赞"/>
+         <ImageView 
+            android:id="@+id/iv_activityReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+             android:layout_toRightOf="@id/tv_likeButton"
+            android:paddingLeft="30dp"
+            android:src="@drawable/activity_reply"/>
+          <TextView 
+            android:id="@+id/tv_activityReply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="10dp"
+            android:layout_toRightOf="@id/iv_activityReply"
+            android:text="12则回复"/>
+         <ImageButton 
+             android:id="@+id/ib_activityEnter"
+             android:layout_width="50dp"
+             android:layout_height="30dp"
+      		android:background="#00ffffff"
+      		android:layout_alignParentRight="true"
+            android:src="@drawable/activity_enter"/>
+    </RelativeLayout>
+
+</RelativeLayout>

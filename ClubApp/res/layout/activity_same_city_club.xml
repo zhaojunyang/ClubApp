@@ -1,0 +1,98 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+	<!-- 提头 -->
+  	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="60dp"
+  	    >
+
+  		<ImageView
+  		    android:id="@+id/samecityclub_back"
+  		    android:layout_width="25dp"
+  		    android:layout_height="25dp"
+  		    android:layout_margin="10dp"
+  		    android:layout_centerVertical="true"
+  		    android:src="@drawable/ba_back_arrow_black" />
+
+  		<ImageView
+  		    android:id="@+id/samecityclub_search"
+  		    android:layout_width="40dp"
+  		    android:layout_height="35dp"
+  		    android:layout_alignParentRight="true"
+  		    android:layout_centerVertical="true"
+  		    android:padding="5dp"
+  		    android:layout_marginRight="15dp"
+  		    android:src="@drawable/place_search" />
+
+  		<TextView
+  		    android:id="@+id/textView3"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_centerHorizontal="true"
+  		    android:layout_centerVertical="true"
+  		    android:textColor="#47A34C"
+  		    android:textSize="24dp"
+  		    android:text="同城俱乐部" />
+  	    
+  	</RelativeLayout>
+
+  	<RelativeLayout
+  	    android:layout_width="match_parent"
+  	    android:layout_height="50dp"
+  	    android:background="#F7F3EC"
+  	     >
+
+  		<TextView
+  		    android:id="@+id/samecityclub_type"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_alignParentLeft="true"
+  		    android:layout_centerVertical="true"
+  		    android:textColor="#807F7E"
+  		    android:textSize="20dp"
+  		    android:layout_marginLeft="20dp"
+  		    android:text="类别" />
+
+  		<ImageView
+  		    android:id="@+id/imageView1"
+  		    android:layout_width="30dp"
+  		    android:layout_height="wrap_content"
+  		    android:layout_toRightOf="@+id/samecityclub_type"
+  		    android:layout_centerVertical="true"
+  		    android:src="@drawable/club_info_dot_down" />
+
+  		<TextView
+  		    android:id="@+id/samecityclub_hot"
+  		    android:layout_width="wrap_content"
+  		    android:layout_height="wrap_content"
+  		    android:layout_centerVertical="true"
+  		    android:layout_toRightOf="@+id/imageView1"
+  		   
+  		    android:textColor="#807F7E"
+  		    android:textSize="20dp"
+  		    android:text="热度" />
+
+  		<ImageView
+  		    android:id="@+id/imageView2"
+  		    android:layout_width="30dp"
+  		    android:layout_height="wrap_content"
+  		    android:layout_toRightOf="@id/samecityclub_hot"
+  		    android:layout_centerVertical="true"
+  		    android:src="@drawable/club_info_dot_down" />
+  		
+  	</RelativeLayout>
+
+  	<com.geminno.club.view.RefreshListView
+  	    android:id="@+id/samecityclub_lv"
+  	    android:layout_width="match_parent"
+  	    android:layout_height="match_parent" >
+  		
+  	    
+  	</com.geminno.club.view.RefreshListView>
+  	
+</LinearLayout>

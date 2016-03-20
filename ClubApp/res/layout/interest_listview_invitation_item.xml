@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <!-- 头像和昵称及关注 -->
+	
+    <RelativeLayout
+        android:id="@+id/layout_invitation_logo_name"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:paddingLeft="20dp"
+        android:background="#ffffff"
+         >
+	<!-- 头像 -->
+        <ImageView
+            android:id="@+id/interest_invitation_person_logo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="15dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/w" />
+	<!-- 昵称 -->
+        <TextView
+            android:id="@+id/interest_invitation_person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/interest_invitation_person_logo"
+           	android:gravity="center_vertical"
+           	android:paddingTop="15dp"
+            android:text="小黑" 
+            android:textColor="#3C3C3C"/>
+	<!-- 关注 -->
+        <Button
+            android:id="@+id/interest_invitation_person_attention"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/interest_invitation_person_name"
+            android:layout_marginRight="17dp"
+            android:background="@drawable/buttonstyle2"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:layout_centerInParent="true"
+            android:textSize="15sp"
+            android:text="查看"
+            android:textColor="#45941D"
+            android:top="10dp" />
+
+    </RelativeLayout>
+
+    <!-- 内容 -->
+
+    <LinearLayout
+        android:id="@+id/layout_invitation_conent_image"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_invitation_logo_name"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:background="#ffffff" >
+
+        <TextView
+            android:id="@+id/invitation_conent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:maxLength="50"
+            android:padding="5dp"
+            android:text="啊啊啊啊啊啊啊啊啊啊啊啊 " 
+            android:lineSpacingMultiplier="1.0"
+            android:textColor="#3C3C3C">
+			
+            <requestFocus android:layout_width="wrap_content" />
+
+        </TextView>
+    </LinearLayout>
+
+    <!-- 图片 -->
+
+    <LinearLayout
+        android:id="@+id/layout_invitation_interest_images"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_invitation_conent_image"
+        android:gravity="center"
+        android:orientation="horizontal" 
+        android:background="@drawable/screen06">
+
+<!--         <ImageView
+            android:id="@+id/interest_invitation_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:src="@drawable/screen06" 
+            android:paddingTop="20dp"
+            android:scaleType="centerInside"
+           /> -->
+    </LinearLayout>
+
+  
+      <!-- 显示回复人数和点赞人数 -->
+    <LinearLayout
+        android:id="@+id/layout_invitation_like_likecount"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_invitation_interest_images"
+        android:orientation="horizontal" >
+		
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center_horizontal" >
+
+            <TextView
+                android:id="@+id/invitation_reply_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:gravity="center_horizontal"
+                android:text="48条回复"
+                android:textColor="#3C3C3C" />
+
+        </RelativeLayout>
+
+          <!-- 点赞 -->
+        
+        <RelativeLayout
+          
+            android:layout_height="match_parent"
+            android:layout_weight="1" 
+            android:layout_width="wrap_content">
+
+            <ImageButton
+                android:id="@+id/invitation_unlike_like"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/daynamic_unlike" 
+                android:paddingTop="2dp"
+                android:background="#ffffff"
+               />
+
+            <TextView
+                android:id="@+id/invitation_like_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/invitation_unlike_like"
+                android:layout_alignRight="@+id/invitation_unlike_like"
+                android:layout_below="@+id/invitation_unlike_like"
+                android:gravity="center"
+                android:text="47" 
+                android:textColor="#3C3C3C"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/interst_line"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/layout_invitation_like_likecount"
+        android:background="#F7F3EC" />
+
+</RelativeLayout>

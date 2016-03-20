@@ -1,0 +1,189 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/club_6" >
+
+        <com.geminno.club.view.RoundImageView
+            android:id="@+id/clubmaipage_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/club_back_icon_bg" />
+
+        <ImageView
+            android:id="@+id/clubmaipage_clubjoin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/clubmaipage_back"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/clubmain_page_joinbutton" />
+
+        <com.geminno.club.view.RoundImageView
+            android:id="@+id/roundclubmaipage_clubjoin"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_below="@+id/clubmaipage_clubjoin"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/samecity_clublogo" />
+
+        <TextView
+            android:id="@+id/clubmaipage_clubname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/roundclubmaipage_clubjoin"
+            android:layout_below="@+id/roundclubmaipage_clubjoin"
+            android:text="攀岩最爱"
+            android:textColor="#B8B8BA"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:id="@+id/clubmainpage_loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/clubmaipage_clubname"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/club_icon_loc" />
+
+        <TextView
+            android:id="@+id/clubmaipage_tv__clublocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/clubmainpage_loc"
+            android:layout_toRightOf="@+id/clubmainpage_loc"
+            android:paddingLeft="5dp"
+            android:text="北京" />
+
+        <ImageView
+            android:id="@+id/samecityclub_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/clubmainpage_loc"
+            android:layout_centerHorizontal="true"
+            android:layout_toLeftOf="@+id/roundclubmaipage_clubjoin"
+            android:src="@drawable/club_icon_label" />
+
+        <TextView
+            android:id="@+id/clubmaipage_tv__type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/samecityclub_label"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/samecityclub_label"
+            android:paddingLeft="7dp"
+            android:text="攀岩" />
+
+        <ImageView
+            android:id="@+id/clubmainpage_member"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/clubmaipage_clubjoin"
+            android:layout_alignTop="@+id/clubmaipage_tv__type"
+            android:src="@drawable/club_icon_member" />
+
+        <TextView
+            android:id="@+id/clubmaipage_tv__topics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/clubmaipage_clubjoin"
+            android:layout_alignTop="@+id/clubmainpage_member"
+            android:layout_toRightOf="@+id/clubmainpage_member"
+            android:paddingLeft="5dp"
+            android:text="432个帖" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/clubmaipage_tv__activities"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="活动"
+                android:textColor="#CFCFCF"
+                android:textSize="20dp" />
+            <TextView
+		        android:id="@+id/clubmaipage_tv__line1"
+		        android:layout_width="match_parent"
+		        android:layout_height="2dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentBottom="true"
+		        android:background="#ffffff"
+		         />
+            
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+            
+            
+             <TextView
+                android:id="@+id/clubmaipage_tv__taolun"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="讨论区"
+                android:textColor="#5E8D5E"
+                android:textSize="20dp" />
+            <TextView
+		        android:id="@+id/clubmaipage_tv__line2"
+		        android:layout_width="match_parent"
+		        android:layout_height="2dp"
+		        android:layout_alignParentLeft="true"
+		        android:background="#589755"
+		        android:layout_alignParentBottom="true"
+		        android:text="text" />
+            
+            
+        </RelativeLayout>
+        
+    </LinearLayout>
+	
+    <!-- 添加灰色的边 -->
+    <TextView 
+        android:id="@+id/samecityclub_darktv"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FAF0EE"
+        android:layout_below="@+id/linearLayout1"
+        />
+    
+    <FrameLayout
+        android:id="@+id/clubmainpage_fragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/samecityclub_darktv"
+         >
+    </FrameLayout>
+    
+</RelativeLayout>

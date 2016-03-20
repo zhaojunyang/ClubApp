@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+        <RelativeLayout
+        android:id="@+id/item_messages"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_message_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_ls" />
+
+        <TextView
+            android:id="@+id/tv_messagetime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_messagename"
+            android:layout_marginRight="20dp"
+            android:text="09:40:08"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_messagedetial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tv_messagename"
+            android:layout_below="@+id/tv_messagetime"
+            android:text="一路向西，勇敢的向前冲吧！" />
+
+        <TextView
+            android:id="@+id/tv_messagename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_message_header"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/iv_message_header"
+            android:text="勇闯天涯"
+            android:textSize="16sp" />
+   
+    </RelativeLayout>
+
+</RelativeLayout>

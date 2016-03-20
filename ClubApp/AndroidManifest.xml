@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clubapp"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.geminno.club.activity.MainActivity"
+            android:label="@string/app_name" >
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+       
+        <activity
+            android:name="com.geminno.club.activity.SameCityActivityActivity"
+            android:label="@string/title_activity_same_city_activity" >
+           
+        </activity>
+        
+
+        <!-- 去除Activity的ActionBar,设置theme属性 -->
+        
+        <!-- 活动列表 -->
+        <activity
+            android:name="com.geminno.club.activity.ActivityListActivity"
+            android:label="@string/activity_list_name" >
+        </activity>
+        <!-- 活动详情页面 -->
+        <activity
+            android:name="com.geminno.club.activity.ActivityDetailsActivity"
+            android:label="@string/title_activity_activity_details" >
+        </activity>
+        <!-- 活动报名页面 -->
+        <activity
+            android:name="com.geminno.club.activity.EnterActivityActivity"
+            android:label="@string/title_activity_activity_details" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.ActivityEnterSuccessActivity"
+            android:label="@string/title_activity_activity_enter_success" >
+        </activity>
+        
+        <!-- 石然 -->
+        <activity
+            android:name="com.geminno.club.activity.LoginActivity"
+            android:label="@string/title_activity_login" >
+            
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.RegisterActivity"
+            android:label="@string/title_activity_register" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.UserInfoActivity"
+            android:label="@string/title_activity_user_info" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.MyactivitiesActivity"
+            android:label="@string/title_activity_myactivities" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.MyfriendsActivity"
+            android:label="@string/title_activity_myfriends" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.MybbsActivity"
+            android:label="@string/title_activity_mybbs" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.MystoreActivity"
+            android:label="@string/title_activity_mystore" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.MyclubsActivity"
+            android:label="@string/title_activity_myclubs" >
+        </activity>
+        <activity
+            android:name="com.geminno.club.activity.SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name="com.example.clubapp.OtherPeopleInfoActivity"
+             >
+        </activity>
+        
+        <!-- 程智渊 -->
+         <!-- 帖子详情 -->
+        <activity
+            android:name="com.geminno.club.activity.InvitationDetailActivity"
+            android:label="@string/title_activity_invitation_detail" >
+        </activity>
+        <!-- 俱乐部主页 -->
+        <activity
+            android:name="com.geminno.club.activity.ClubMainPageActivity"
+            android:label="@string/title_activity_club_main_page"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+       <!-- 新建俱乐部 -->
+        <activity
+            android:name="com.geminno.club.activity.BulidClubActivity"
+            android:label="@string/title_activity_bulid_club" >
+        </activity>
+         <!-- 同城俱乐部 -->
+        <activity
+            android:name="com.geminno.club.activity.SameCityClubActivity"
+            android:label="@string/title_activity_same_city_club"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <!-- 申请加入俱乐部时候填的信息 -->
+        <activity
+            android:name="com.geminno.club.activity.AddClubInfoActivity"
+            android:label="czy"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <!-- 帖子回复页面 -->
+        <activity
+            android:name="com.geminno.club.activity.InvitationReplyActivity"
+            android:label="czy"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        
+        <!-- 我加入的俱乐部 -->
+        <activity
+            android:name="com.geminno.club.activity.MyAddedClubActivity"
+            android:label="czy"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+          
+        </activity>
+        <!-- 发布帖子 -->
+        <activity
+            android:name="com.geminno.club.activity.Release_InvitationActivity"
+            android:label="czy"
+             >
+        </activity>
+        <!-- 俱乐部详情 -->
+        <activity
+            android:name="com.geminno.club.activity.ClubDetailsActivity"
+            android:label="czy"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+        <!-- 成员列表 -->
+        <activity
+            android:name="com.geminno.club.activity.ClubMembersActivity"
+            android:label="czy"
+            android:theme="@android:style/Theme.Holo.NoActionBar" >
+        </activity>
+    </application>
+
+</manifest>

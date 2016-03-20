@@ -1,0 +1,151 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+<!-- 返回图标 -->
+        <ImageView
+            android:id="@+id/club_invitation_detail"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:src="@drawable/buildclub_back" />
+<!-- 点击出现更多分享 -->
+        <ImageView
+            android:id="@+id/club_invitation_detail_sharemore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/topic_share_tomore" />
+<!-- 微信分享给好有 -->
+        <ImageView
+            android:id="@+id/club_invitation_detail_share_weixin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/club_invitation_detail_sharemore"
+            android:src="@drawable/topic_share_tofriend_weixin" />
+<!-- 微信分享到朋友圈 -->
+        <ImageView
+            android:id="@+id/club_invitation_detail_share_weixin_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/club_invitation_detail_share_weixin"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/club_invitation_detail_share_weixin"
+            android:src="@drawable/topic_share_friendcircle" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/club_group_sepline" />
+
+    </RelativeLayout>
+	
+    
+    <!-- 固定的点击和点赞 -->
+    <LinearLayout 
+        android:id="@+id/linearLayout11"
+        android:layout_width="match_parent"
+		android:layout_height="60dp"
+		android:layout_alignParentBottom="true"
+		android:orientation="horizontal"
+		android:background="#F9F9F9"
+        >
+<!-- 点赞布局 -->        
+        <RelativeLayout 
+            android:id="@+id/club_invitation_detail_relation_clicklike"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            
+            >
+			<LinearLayout 
+			    android:layout_centerInParent="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+			
+            <ImageView
+                android:id="@+id/club_invitation_detail1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/club_topic_clickattention_buttom" />
+<!-- 点击的人数 -->
+            <TextView
+                android:id="@+id/club_invitation_detail_relation_clicknumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_toRightOf="@+id/club_invitation_detail1"
+                android:layout_marginLeft="5dp"
+                android:textColor="#C4685A"
+                android:textSize="14dp"
+                android:text="59个点赞" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+        <!-- 中间分割线 -->
+        <TextView 
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="#E2E1DE"/>
+<!-- 点击回复 -->
+        <RelativeLayout
+            android:id="@+id/club_invitation_detail_toreply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            >
+            <LinearLayout 
+			    android:layout_centerInParent="true"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/club_invitation_detail2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/club_topic_icon" />
+<!-- 回复数量 -->
+            <TextView
+                android:id="@+id/club_invitation_detail_relation_replynumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_marginLeft="5dp"
+                android:textColor="#969696"
+                android:textSize="14dp"
+                android:text="58则回复" />
+            </LinearLayout>
+        </RelativeLayout>
+        
+    </LinearLayout>
+
+    <com.geminno.club.view.MyCZYListView
+        android:id="@+id/myCZYListView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayout11"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/relativeLayout1" >
+
+    </com.geminno.club.view.MyCZYListView>
+    
+</RelativeLayout>

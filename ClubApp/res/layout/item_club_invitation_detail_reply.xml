@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<!-- 回贴人LOGO -->
+    <com.geminno.club.view.RoundAngleImageView
+        android:id="@+id/club_ivitationdetail_item_reply_userlogo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/club_friends_logo" />
+<!-- 回帖人名称 -->
+    <TextView
+        android:id="@+id/club_ivitationdetail_item_reply_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/club_ivitationdetail_item_reply_userlogo"
+        android:layout_marginLeft="12dp"
+        android:layout_toRightOf="@+id/club_ivitationdetail_item_reply_userlogo"
+        android:textSize="12dp"
+        android:textColor="#6C6C6C"
+        android:text="轮子翻滚吧" />
+<!-- 回帖人是否是楼主 -->
+    <ImageView
+        android:id="@+id/club_ivitationdetail_item_reply_ismaster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/club_ivitationdetail_item_reply_username"
+        android:layout_toRightOf="@+id/club_ivitationdetail_item_reply_username"
+        android:layout_marginLeft="5dp"
+        android:src="@drawable/club_tier_master" />
+<!-- 回复的时间 -->
+    <TextView
+        android:id="@+id/club_ivitationdetail_item_reply_tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/club_ivitationdetail_item_reply_username"
+        android:layout_below="@+id/club_ivitationdetail_item_reply_username"
+        android:layout_marginTop="6dp"
+        android:textSize="12dp"
+        android:textColor="#959595"
+        android:text="2016-01-13  18:18" />
+<!-- 回复的楼数 -->
+    <TextView
+        android:id="@+id/club_ivitationdetail_item_reply_floornumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/club_ivitationdetail_item_reply_tv_time"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:textSize="12dp"
+        android:textColor="#959595"
+        android:text="2楼" />
+<!-- 回复的内容 -->
+    <TextView
+        android:id="@+id/club_ivitationdetail_item_reply_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/club_ivitationdetail_item_reply_userlogo"
+        android:layout_below="@+id/club_ivitationdetail_item_reply_userlogo"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="14dp"
+        android:textColor="#949494"
+        android:text="享受着午后的阳光和蓝天！人类的生活就应该是这样的" />
+<!-- 回复自带的图片 -->
+    <ImageView
+        android:id="@+id/club_ivitationdetail_item_reply_iv_pic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/club_ivitationdetail_item_reply_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/banner2" />
+    
+</RelativeLayout>

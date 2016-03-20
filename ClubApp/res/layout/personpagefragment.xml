@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.clubapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/find_page_fragment_bg" >
+
+
+    <RelativeLayout
+        android:id="@+id/lable"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/find_page_fragment_topbg" >
+
+        <TextView
+            android:id="@+id/myinfo_fragment_toptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="我"
+            android:textSize="24sp" />
+
+        <ImageView
+            android:id="@+id/myinfo_fragment_iv_setting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/mine_icon_setting" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line1"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/lable"
+        android:background="@color/btn_gray_normal" />
+
+    <RelativeLayout
+        android:id="@+id/myinfo_area"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lable"
+        android:layout_marginTop="10dp"
+        android:background="#ffffff"
+        android:paddingBottom="30dp"
+        android:paddingTop="30dp" >
+
+        <com.geminno.club.view.RoundAngleImageView
+            android:id="@+id/personinfo_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+			app:roundWidth="10dp"
+			app:roundHeight="10dp"
+            android:src="@drawable/ls_nologin_header_icon" />
+
+        <TextView
+            android:id="@+id/personinfo_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/personinfo_image"
+            android:layout_marginLeft="20dp"
+            android:text="昵称"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/personinfo_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_toRightOf="@+id/personinfo_name"
+            android:src="@drawable/level_1" />
+
+        <ImageView
+            android:id="@+id/personinfo_doright"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25dp"
+            android:src="@drawable/personinfo_dot_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/myinfo_area"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/line3"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/myinfo_area"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/line4"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@+id/myinfo_area"
+        android:layout_marginTop="12dp"
+        android:background="@color/btn_gray_normal" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/line4"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/myinfo_layout_myactivitys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/myinfo_myactivitys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/my_market" />
+
+            <TextView
+                android:id="@+id/tv_myinfo_myactivitys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/myinfo_myactivitys"
+                android:text="我的活动"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/myinfo_layout_myfriends"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/myinfo_myfriends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mine_icon_my_friends" />
+
+            <TextView
+                android:id="@+id/tv_myinfo_myfrends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/myinfo_myfriends"
+                android:text="我加入的好友"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        <View
+        android:id="@+id/line5"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/linearLayout1"
+        android:background="@color/btn_gray_normal" />
+        
+        <RelativeLayout
+             android:id="@+id/myinfo_layout_mybbs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/myinfo_mybbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mine_icon_like" />
+
+            <TextView
+                android:id="@+id/tv_myinfo_mybbs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/myinfo_mybbs"
+                android:text="我的帖子"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        
+        <View
+        android:id="@+id/line6"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_below="@+id/relativelayout2"
+        android:background="@color/btn_gray_normal" />
+        
+        <RelativeLayout
+            android:id="@+id/myinfo_layout_mystorys"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/myinfo_mystorys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mine_icon_collection" />
+
+            <TextView
+                android:id="@+id/tv_myinfo_mystorys"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/myinfo_mystorys"
+                android:text="收藏"
+                android:textSize="20sp" />
+        </RelativeLayout>
+        
+        <RelativeLayout
+            android:id="@+id/myinfo_layout_myclubs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="20dp"
+            android:paddingTop="20dp" >
+
+            <ImageView
+                android:id="@+id/myinfo_myclubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="20dp"
+                android:src="@drawable/mine_icon_topic" />
+
+            <TextView
+                android:id="@+id/tv_myinfo_myclubs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="30dp"
+                android:layout_toRightOf="@+id/myinfo_myclubs"
+                android:text="我的俱乐部"
+                android:textSize="20sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+ 
+</RelativeLayout>

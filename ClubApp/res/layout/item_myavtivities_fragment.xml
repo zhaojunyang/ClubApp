@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res/com.example.clubapp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/item_activity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingBottom="20dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp" >
+
+
+          <com.geminno.club.view.RoundAngleImageView
+            android:id="@+id/iv_activity_header"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            app:roundWidth="10dp"
+			app:roundHeight="10dp"
+			
+            android:src="@drawable/icon_ls" />
+       
+        
+
+        <TextView
+            android:id="@+id/tv_avtivityname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/iv_activity_header"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/iv_activity_header"
+            android:text="勇闯天涯" 
+            android:textSize="16sp"/>
+        
+        <ImageView
+            android:id="@+id/iv_activitystatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/iv_activity_header"
+            android:layout_alignLeft="@+id/tv_avtivityname"
+            android:layout_marginBottom="3dp"
+            android:src="@drawable/pay_status_enter" />
+
+        <TextView
+            android:id="@+id/tv_activitytime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/iv_activitystatus"
+            android:layout_centerVertical="true"
+            android:text="2016/03/15/09:40:08"
+            android:textSize="16sp" />   
+    </RelativeLayout>
+    <View
+	   android:id="@+id/line1"
+	   android:layout_width="match_parent"
+	   android:layout_height="0.5dp"
+	   android:layout_below="@+id/item_activity"
+	   android:background="@color/btn_gray_normal" />
+
+</RelativeLayout>

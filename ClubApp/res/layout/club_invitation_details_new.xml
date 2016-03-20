@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:id="@+id/linearLayout12"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center_horizontal|center_vertical" >
+
+            <ImageView
+                android:id="@+id/iv_animation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_launcher" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/club_invitation_detail_relat"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/linearLayout12"
+            android:layout_alignParentLeft="true"
+            
+            >
+            <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="match_parent"
+		        android:layout_height="35dp"
+		        android:layout_alignParentLeft="true"
+		        android:background="#F7F2EC" />
+<!-- 发布帖子的俱乐部名称 -->
+		    <TextView
+		        android:id="@+id/club_invitation_detail_clubname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginTop="10dp"
+		        android:layout_alignParentLeft="true"
+		        android:layout_marginLeft="20dp"
+		        android:textColor="#B48525"
+		        android:textSize="16dp"
+		        android:text="XXX俱乐部	" />
+<!-- 想左箭头，进入俱乐部主页 -->
+			<ImageView
+		        android:id="@+id/club_invitation_detail_goclub"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:layout_alignTop="@+id/club_invitation_detail_clubname"
+		        android:src="@drawable/club_info_dot_right" />
+		    
+<!-- 发帖人LOGO -->		    
+		    <com.geminno.club.view.RoundImageView
+		        android:id="@+id/club_invitation_detail_userlogo"
+		        android:layout_width="40dp"
+		        android:layout_height="40dp"
+		        android:layout_below="@+id/textView1"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginTop="16dp"
+		        android:src="@drawable/ba_club_search_bg" />
+<!-- 发帖人名称 -->
+		    <TextView
+		        android:id="@+id/club_invitation_detail_username"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/club_invitation_detail_userlogo"
+		        android:layout_marginLeft="14dp"
+		        android:layout_toRightOf="@+id/club_invitation_detail_userlogo"
+		        android:layout_marginBottom="10dp"
+		        android:textColor="#000000"
+		        android:textSize="18dp"
+		        android:text="门徒" />
+<!-- 楼主图片 -->
+		    <ImageView
+		        android:id="@+id/club_invitation_detail_ismaster"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/club_invitation_detail_username"
+		        android:layout_marginLeft="12dp"
+		        android:layout_toRightOf="@+id/club_invitation_detail_username"
+		        android:layout_marginBottom="2dp"
+		        android:src="@drawable/club_tier_master" />
+<!-- 是否关注 -->
+		    <ImageView
+		        android:id="@+id/club_invitation_detail_isattention"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignBottom="@+id/club_invitation_detail_userlogo"
+		        android:layout_marginRight="20dp"
+		        android:src="@drawable/topic_details_clickattention" />
+<!-- 是否是精帖子 -->
+		    <ImageView
+		        android:id="@+id/club_invitation_detail_isbest_topic"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:layout_below="@+id/club_invitation_detail_isattention"
+		        android:layout_marginTop="20dp"
+		        android:src="@drawable/club_topic_best_icon" />
+<!-- 帖子标题 -->
+		    <TextView
+		        android:id="@+id/club_invitation_detail_topictitle"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignLeft="@+id/club_invitation_detail_userlogo"
+		        android:paddingLeft="4dp"
+		        android:layout_toLeftOf="@+id/club_invitation_detail_isbest_topic"
+		        android:layout_marginRight="5dp"
+		        android:layout_alignTop="@+id/club_invitation_detail_isbest_topic"
+		        android:textColor="#4AA449"
+		        android:textSize="20dp"
+		        android:text="[感谢有你]喀儿里克冰川穿越的伙伴" />
+<!-- 帖子的内容 -->
+		    <TextView
+		        android:id="@+id/club_invitation_detail_topiccontent"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="20dp"
+		        android:textColor="#7F7E7C"
+		        android:textSize="16dp"
+		        android:layout_below="@+id/club_invitation_detail_topictitle"
+		        android:layout_marginTop="20dp"
+		        android:singleLine="false"
+		        android:padding="4dp"
+		        android:text="穿越过肆掠的风暴\n拨开迷雾的拂晓\n而   后 \n将是你我的相聚 " />
+<!-- 帖子发出的图片 -->
+		    <ImageView
+		        android:id="@+id/club_invitation_detail_topic_pic"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+				android:layout_below="@+id/club_invitation_detail_topiccontent"
+		        android:scaleType="fitXY"
+		        android:layout_marginTop="20dp"
+		        android:src="@drawable/club_9"
+		         />
+		    
+			
+		     <ImageView
+		        android:id="@+id/club_invitation_detail3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_below="@+id/club_invitation_detail_topic_pic"
+		        android:layout_marginTop="4dp"
+		        android:layout_marginLeft="20dp"
+		        android:src="@drawable/club_topic_activity_time" />
+<!-- 发帖时间 -->	 	
+		     <TextView 
+		         android:id="@+id/club_invitation_detail_topictime"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_alignBottom="@+id/club_invitation_detail3"
+		         android:textColor="#999999"
+		         android:textSize="12dp"
+		         android:layout_toRightOf="@+id/club_invitation_detail3"
+		         android:layout_marginLeft="5dp"
+		         android:text="3天前"
+		         />
+
+		   <ImageView 
+		       android:id="@+id/club_invitation_detail4"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:src="@drawable/club_info_look_num"
+		       android:layout_alignBottom="@+id/club_invitation_detail3"
+		       android:layout_toRightOf="@id/club_invitation_detail_topictime"
+		       android:layout_marginLeft="20dp"
+		      	/>  
+<!-- 浏览人数 -->
+		     <TextView 
+		         android:id="@+id/club_invitation_detail_tv_looknumber"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_alignBottom="@+id/club_invitation_detail4"
+		         android:text="405604"
+		         android:textColor="#999999"
+		         android:textSize="12dp"
+		         android:layout_toRightOf="@+id/club_invitation_detail4"
+		         android:layout_marginLeft="5dp"
+		         />
+<!-- 中间过度条纹 -->
+		     <TextView 
+		         android:id="@+id/club_invitation_detail_replynumber"
+		         android:layout_width="match_parent"
+		         android:layout_height="20dp"
+		         android:layout_alignParentLeft="true"
+		         android:layout_below="@+id/club_invitation_detail3"
+		         android:background="#F6F3EA"
+		         android:layout_marginTop="10dp"
+		         />
+<!-- 点赞的人数 -->
+		     <TextView 
+		         android:id="@+id/club_invitation_detail_clicklikenum"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:layout_below="@id/club_invitation_detail_replynumber"
+		         android:layout_alignLeft="@+id/club_invitation_detail3"
+		         android:layout_marginTop="10dp"
+		         android:text="59人赞过"
+		         android:textColor="#999999"
+		         android:textSize="14dp"
+		         />
+<!-- 点击点赞 -->		     
+		     <ImageView 
+		         android:id="@+id/club_invitation_detail_clickclikebtn"
+		         android:layout_width="wrap_content"
+		         android:layout_height="wrap_content"
+		         android:src="@drawable/club_topic_details_clickattention_body"
+		         android:layout_below="@+id/club_invitation_detail_clicklikenum"
+		         android:layout_alignLeft="@+id/club_invitation_detail_clicklikenum"
+		         android:layout_marginTop="5dp"
+		         />
+		     
+		     <LinearLayout 
+		         android:id="@+id/linearLayout2"
+		         android:layout_width="match_parent"
+		         android:layout_height="35dp"
+		         android:orientation="horizontal"
+		         android:layout_toRightOf="@+id/club_invitation_detail_clickclikebtn"
+		         android:layout_marginLeft="5dp"
+		         android:layout_alignBottom="@+id/club_invitation_detail_clickclikebtn"
+		         android:layout_alignParentRight="true"
+		         android:layout_marginRight="16dp"
+		         >
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail6"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail7"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail8"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail9"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail_sharemore0"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail_sharemore1"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail_sharemore2"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail_sharemore3"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="28dp"
+		             android:padding="4dp"
+		             android:layout_marginBottom="2dp"
+		             android:layout_gravity="bottom"
+		             android:layout_marginLeft="4dp"
+		             android:background="@drawable/ba_club_search_bg"
+		              />
+		         
+		         <com.geminno.club.view.RoundAngleImageView
+		             android:id="@+id/club_invitation_detail_sharemore4"
+		             android:layout_weight="1"
+		             android:layout_width="0dp"
+		             android:layout_height="35dp"
+		             android:padding="4dp"
+		             android:layout_marginLeft="4dp"
+		             android:src="@drawable/club_admin_more"
+		              />
+		         
+		         
+		     </LinearLayout>
+		     
+<!-- 中间过度条纹 -->
+		     <TextView 
+		         android:id="@id/textView10"
+		         android:layout_width="match_parent"
+		         android:layout_height="20dp"
+		         android:layout_alignParentLeft="true"
+		         android:layout_below="@+id/club_invitation_detail_clickclikebtn"
+		         android:layout_marginTop="20dp"
+		         android:background="#F6F3EA"
+		         />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

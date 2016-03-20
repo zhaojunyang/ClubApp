@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/corner_view"
+	    android:orientation="vertical">
+	    <RelativeLayout 
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        >
+
+	         <TextView
+	             android:id="@+id/tv_activityEnterNo"
+	             android:layout_width="wrap_content"
+	             android:layout_height="wrap_content"
+	             android:layout_centerInParent="true"
+	             android:text="报名人1" />
+	        <ImageView
+	            android:id="@+id/tv_enter_delete"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:onClick="deleteActivityEnter"
+	            android:layout_alignParentRight="true"
+	            android:src="@drawable/activity_enter_delete"/>
+<!-- 	        <ImageView -->
+<!-- 	            android:layout_width="wrap_content" -->
+<!-- 	            android:layout_height="wrap_content" -->
+<!-- 	            android:layout_toLeftOf="@id/tv_enter_delete" -->
+<!-- 	            android:layout_centerVertical="true" -->
+<!-- 	            android:src="@drawable/activity_enter_edit"/> -->
+
+	    </RelativeLayout >
+	   
+	     <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#cccccc" />
+	  
+	    <TextView
+        android:id="@+id/tv_enterName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="真实姓名：曹操" />
+
+   
+
+    <TextView
+        android:id="@+id/tv_enterIdCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="身份证：123213" />
+
+    <TextView
+        android:id="@+id/tv_enterPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="手机号码：13156789909" />
+
+	</LinearLayout>
+</LinearLayout>
