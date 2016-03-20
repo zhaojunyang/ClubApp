@@ -10,9 +10,9 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:paddingLeft="20dp"
-        android:paddingTop="20dp" >
+        android:paddingTop="10dp" >
 
 
           <com.geminno.club.view.RoundAngleImageView
@@ -29,7 +29,7 @@
         
 
         <TextView
-            android:id="@+id/tv_avtivityname"
+            android:id="@+id/tv_avtivitiesname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignTop="@+id/iv_activity_header"
@@ -37,14 +37,15 @@
             android:layout_marginTop="3dp"
             android:layout_toRightOf="@+id/iv_activity_header"
             android:text="勇闯天涯" 
-            android:textSize="16sp"/>
+            android:textSize="16sp"
+            android:textColor="#ff0000"/>
         
         <ImageView
             android:id="@+id/iv_activitystatus"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignBottom="@+id/iv_activity_header"
-            android:layout_alignLeft="@+id/tv_avtivityname"
+            android:layout_alignLeft="@+id/tv_avtivitiesname"
             android:layout_marginBottom="3dp"
             android:src="@drawable/pay_status_enter" />
 
@@ -53,9 +54,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignLeft="@+id/iv_activitystatus"
-            android:layout_centerVertical="true"
+            android:layout_below="@+id/tv_avtivitiesname"
+            android:layout_marginTop="2dp"
             android:text="2016/03/15/09:40:08"
-            android:textSize="16sp" />   
+            android:textSize="13sp" />   
     </RelativeLayout>
     <View
 	   android:id="@+id/line1"

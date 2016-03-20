@@ -24,8 +24,8 @@
 
             <com.geminno.club.view.CircleImageView
                 android:id="@+id/iv_store_header"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 app:border_color="#ffffff"
                 android:src="@drawable/club_icon_climbarticle" />
 
@@ -33,21 +33,21 @@
                 android:id="@+id/iv_store_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBottom="@+id/iv_store_header"
-                android:layout_marginLeft="10dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
                 android:layout_toRightOf="@+id/iv_store_header"
                 android:text="blues"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
 
             <TextView
                 android:id="@+id/iv_store_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_alignBaseline="@+id/iv_store_name"
-                android:layout_alignBottom="@+id/iv_store_name"
                 android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
                 android:text="16/03/15"
-                android:textSize="20sp" />
+                android:textSize="13sp" />
+
         </RelativeLayout>
 
     </RelativeLayout>
@@ -68,24 +68,26 @@
         android:paddingLeft="20dp"
         android:paddingTop="20dp" >
 
-        <ImageView
+        <com.geminno.club.view.RoundAngleImageView
             android:id="@+id/iv_activityimage"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"
+            android:layout_centerVertical="true"    
+            app:roundWidth="10dp"
+            app:roundHeight="10dp"
             android:src="@drawable/icon_ls" />
 
-        <TextView
+         <TextView
             android:id="@+id/tv_avtivityname"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/tv_activitytype"
-            android:layout_centerHorizontal="true"
-            android:text="勇闯天涯"
+            android:layout_toRightOf="@+id/iv_activityimage"
             android:layout_marginLeft="20dp"
-            android:textSize="20sp" />
-
+            android:layout_centerVertical="true"
+            android:text="勇闯天涯"
+            android:textSize="16sp" />
+         
         <TextView
             android:id="@+id/tv_activitytype"
             android:layout_width="wrap_content"
@@ -93,7 +95,9 @@
             android:layout_alignLeft="@+id/tv_avtivityname"
             android:layout_alignTop="@+id/iv_activityimage"
             android:text="2016/03/15/09:40:08"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
+
+       
 
     </RelativeLayout>
 

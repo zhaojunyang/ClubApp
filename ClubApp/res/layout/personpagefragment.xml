@@ -4,8 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/find_page_fragment_bg" >
-
-
+  <ScrollView 
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+   <RelativeLayout 
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
     <RelativeLayout
         android:id="@+id/lable"
         android:layout_width="match_parent"
@@ -47,13 +51,13 @@
         android:layout_below="@+id/lable"
         android:layout_marginTop="10dp"
         android:background="#ffffff"
-        android:paddingBottom="30dp"
-        android:paddingTop="30dp" >
+        android:paddingBottom="20dp"
+        android:paddingTop="20dp" >
 
         <com.geminno.club.view.RoundAngleImageView
             android:id="@+id/personinfo_image"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
             android:layout_marginLeft="20dp"
@@ -69,7 +73,7 @@
             android:layout_toRightOf="@+id/personinfo_image"
             android:layout_marginLeft="20dp"
             android:text="昵称"
-            android:textSize="20sp" />
+            android:textSize="16sp" />
 
         <ImageView
             android:id="@+id/personinfo_level"
@@ -126,8 +130,8 @@
             android:id="@+id/myinfo_layout_myactivitys"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:id="@+id/myinfo_myactivitys"
@@ -145,15 +149,15 @@
                 android:layout_marginLeft="30dp"
                 android:layout_toRightOf="@+id/myinfo_myactivitys"
                 android:text="我的活动"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
 
         <RelativeLayout
             android:id="@+id/myinfo_layout_myfriends"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:id="@+id/myinfo_myfriends"
@@ -171,7 +175,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_toRightOf="@+id/myinfo_myfriends"
                 android:text="我加入的好友"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
         <View
         android:id="@+id/line5"
@@ -185,8 +189,8 @@
              android:id="@+id/myinfo_layout_mybbs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:id="@+id/myinfo_mybbs"
@@ -204,7 +208,7 @@
                 android:layout_marginLeft="30dp"
                 android:layout_toRightOf="@+id/myinfo_mybbs"
                 android:text="我的帖子"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
         
         <View
@@ -220,8 +224,8 @@
             android:id="@+id/myinfo_layout_mystorys"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:id="@+id/myinfo_mystorys"
@@ -239,15 +243,15 @@
                 android:layout_marginLeft="30dp"
                 android:layout_toRightOf="@+id/myinfo_mystorys"
                 android:text="收藏"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
         
         <RelativeLayout
             android:id="@+id/myinfo_layout_myclubs"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingBottom="20dp"
-            android:paddingTop="20dp" >
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" >
 
             <ImageView
                 android:id="@+id/myinfo_myclubs"
@@ -265,9 +269,10 @@
                 android:layout_marginLeft="30dp"
                 android:layout_toRightOf="@+id/myinfo_myclubs"
                 android:text="我的俱乐部"
-                android:textSize="20sp" />
+                android:textSize="16sp" />
         </RelativeLayout>
     </LinearLayout>
 
- 
+ </RelativeLayout>
+ </ScrollView>
 </RelativeLayout>

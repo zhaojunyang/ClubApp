@@ -8,14 +8,14 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/layout1"
-        android:paddingBottom="20dp"
+        android:paddingBottom="10dp"
         android:paddingLeft="20dp"
-        android:paddingTop="20dp" >
+        android:paddingTop="10dp" >
 
         <com.geminno.club.view.CircleImageView
             android:id="@+id/iv_friends_header"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             app:border_color="#ffffff"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
@@ -30,8 +30,8 @@
             android:layout_toRightOf="@+id/iv_friends_header"
             android:layout_marginTop="5dp"
             android:text="勇闯天涯"
-            android:textSize="20sp"
-            android:textColor="#00ff00" />
+            android:textSize="16sp"
+             />
 
         <TextView
             android:id="@+id/tv_friendsign"
@@ -40,7 +40,7 @@
             android:layout_alignBottom="@+id/iv_friends_header"
             android:layout_alignLeft="@+id/tv_friendsname"
             android:text="一路向西去云游"
-            android:textSize="20sp" 
+            android:textSize="13sp" 
             android:layout_marginBottom="5dp"/>
 
     </RelativeLayout>
