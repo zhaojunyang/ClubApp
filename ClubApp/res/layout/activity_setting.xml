@@ -46,7 +46,7 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentRight="true"
         android:layout_below="@+id/lable"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="60dp"
         android:background="@color/find_page_fragment_topbg"
         android:padding="20dp" >
 
@@ -58,7 +58,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="20dp"
             android:text="当前版本"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </RelativeLayout>
 
     <RelativeLayout
@@ -79,7 +79,7 @@
             android:layout_alignParentTop="true"
             android:layout_marginLeft="20dp"
             android:text="清理缓存"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:id="@+id/textView1"
@@ -90,7 +90,7 @@
             android:layout_alignParentRight="true"
             android:layout_marginRight="40dp"
             android:text="M"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
 
         <TextView
             android:id="@+id/count_cache"
@@ -100,13 +100,13 @@
             android:layout_alignBottom="@+id/textView1"
             android:layout_toLeftOf="@+id/textView1"
             android:text="0.1"
-            android:textSize="24sp" />
+            android:textSize="16sp" />
     </RelativeLayout>
 
     <RelativeLayout
         android:id="@+id/layout_exit"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="80dp"
@@ -119,9 +119,63 @@
             android:layout_centerVertical="true"
             android:text="退出当前账号"
             android:textColor="#ffffff"
-            android:textSize="24sp" />
+            android:textSize="20sp" />
     </RelativeLayout>
 
-   
+    <View
+        android:id="@+id/View01"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/relativelayout1"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/RelativeLayout01"
+        android:layout_alignParentLeft="true"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/View02"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/View02"
+        android:layout_alignParentLeft="true"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/RelativeLayout01"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/View03"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View03"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/View04"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/RelativeLayout01"
+        android:background="@color/btn_gray_normal" />
+
+    <View
+        android:id="@+id/View04"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/View04"
+        android:background="@color/btn_gray_normal" />
 
 </RelativeLayout>
