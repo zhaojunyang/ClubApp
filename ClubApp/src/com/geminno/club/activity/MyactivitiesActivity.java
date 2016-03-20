@@ -52,7 +52,7 @@ public class MyactivitiesActivity extends Activity implements OnItemClickListene
 	@ViewInject(R.id.iv_activity_header)
 	ImageView iv_activity_header;
 	
-	@ViewInject(R.id.tv_avtivityname)
+	@ViewInject(R.id.tv_avtivitiesname)
 	TextView tv_avtivityname;
 	
 	@ViewInject(R.id.tv_activitytime)
@@ -172,7 +172,7 @@ public class MyactivitiesActivity extends Activity implements OnItemClickListene
 							 * 对照原型图，将对应的控件赋值
 							 */
 							viewHolder.setImageByUri(R.id.iv_activity_header, item.getPic());
-							viewHolder.setText(R.id.tv_avtivityname, item.getFields().getFulltitle());
+							viewHolder.setText(R.id.tv_avtivitiesname, item.getFields().getFulltitle());
 							viewHolder.setText(R.id.tv_activitytime, item.getFields().getTime());
 						}
 					};
